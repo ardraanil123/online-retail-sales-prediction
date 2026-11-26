@@ -1,0 +1,35 @@
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Testing cache
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+
+# Logs
+logs/
+*.log
+
+# Local database
+data/predictions.db
+
+# MLflow local tracking files
+mlruns/
+
+# IDE settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local MLflow database
+mlflow.db

@@ -1,0 +1,16 @@
+
+services:
+  app:
+    build: .
+    image: online-retail-app
+    container_name: online-retail-container
+    ports:
+      - "8501:8501"
+    environment:
+      - DB_PATH=/app/storage/predictions.db
+    volumes:
+      - prediction_data:/app/storage
+    restart: unless-stopped
+
+volumes:
+  prediction_data:
